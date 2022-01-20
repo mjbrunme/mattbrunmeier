@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matt Brunmeier - You found me!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins:wght@700&family=Roboto+Mono:wght@500&display=swap&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous"/>
+
+    <style type="text/css">
+        body {
+            background: #f5f5f5 url('site-tile.png') repeat-x;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        a, a:visited {
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover, header.page-header a:hover {
+            color: #0085d9;
+        }
+
+        main {
+            margin: 75px auto;
+            width: 95%;
+            max-width: 880px;
+        }
+
+        header {
+            font-family: 'Poppins', sans-serif;
+            color: #000;
+        }
+
+        header.page-header {
+            margin: 100px auto;
+            width: 95%;
+            max-width: 880px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header.page-header h1, header.page-header p {
+            margin: 2px 0px;
+        }
+
+        header.page-header img {
+            border-radius: 80px;
+            border: 6px solid #eee;
+            box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.7) inset;
+        }
+
+        header.page-header img:hover {
+            animation: border-change 1s linear;
+        }
+
+        @keyframes border-change {
+            50% {
+                border-color: #0085d9;
+            }
+        }
+
+        header.page-header a {
+            padding: 0px 5px;
+            color: #777777;
+        }
+
+        article {
+            margin: 100px 0px;
+        }
+
+        .post figure.post-banner {
+            margin: 0;
+        }
+
+        .post figure.post-banner img {
+            border-radius: 6px;
+            max-width: 100%;
+        }
+
+        p {
+            color: #777777;
+        }
+
+        .post .post-content {
+            line-height: 1.65em;
+            letter-spacing: 0.1px;
+        }
+
+        .post .post-padding {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .em, .spacer {
+            color: #0085d9;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .right-float {
+            float: right;
+        }
+
+        .mono, .spacer {
+            font-family: 'Roboto Mono', 'Courier';
+        }
+
+        .tags i {
+            padding-right: 8px;
+            vertical-align: -10%;
+        }
+
+        .small {
+            font-size: 0.85em;
+        }
+
+        .smaller {
+            font-size: 0.75em;
+        }
+
+        .spacer {
+            width: 20%;
+            margin: -25px auto;
+            height: 0px;
+            border-bottom: 1px dotted #0085d9;
+        }
+
+    </style>
+</head>
+<body>
+<header class="page-header">
+    <div class="header-item">
+        <a href="#"><img src="header-head.jpg" alt="You found me!"/></a>
+    </div>
+    <div class="header-item right">
+        <h1>Hey<span class="em">.</span></h1>
+        <p class="small">
+            <a href="https://www.linkedin.com/in/mattbrunmeier/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/mjbrunme" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://stackoverflow.com/users/97506/matt-brunmeier" target="_blank"><i
+                    class="fab fa-stack-overflow"></i></a>
+            <a href="https://www.reddit.com/user/epalla" target="_blank"><i class="fab fa-reddit"></i></a>
+            <a href="https://twitter.com/mattbrunmeier" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://open.spotify.com/user/lr1qrctd6te113jwhfsuaxjdl?si=j0qa3wiVQt22gDD1dr7cwQ" target="_blank"><i
+                    class="fab fa-spotify"></i></a>
+        </p>
+    </div>
+</header>
+<main>
+    <section id="posts">
+        <article id="post-1" class="post">
+            <figure class="post-banner"><img src="content-post1.jpg" alt="Post 1 Title"/></figure>
+            <div class="post-padding">
+                <header class="post-header"><h2>Lorem ipsum dolor sit amet, consectetur</h2></header>
+                <section class="post-details"><p class="smaller light mono">March 9, 2020 <span
+                        class="tags right-float"><i
+                        class="fa fa-tags"></i><a href="#">PERSONAL</a>, <a href="#">DESIGN</a></span></p></section>
+                <section class="post-content"><p>It’s no secret that the digital industry is booming. From exciting
+                    startups
+                    to global brands, companies are reaching out to digital agencies, responding to the new
+                    possibilities
+                    available. However, the industry is fast becoming overcrowded, heaving with agencies offering
+                    similar
+                    services</p>
+                </section>
+                <footer class="post-footer">
+                    <p>
+                        <a href="#"><strong>Continue Reading<span class="em">.</span></strong></a>
+                    </p>
+                </footer>
+            </div>
+        </article>
+
+        <div class="spacer"></div>
+
+        <article id="post-2" class="post">
+            <div class="post-padding">
+                <header class="post-header"><h2>Nunc feugiat ligula et hendrerit suscipit. Phasellus luctus massa vel
+                    metus dictum iaculis. Nam ut hendrerit augue.</h2></header>
+                <section class="post-details"><p class="smaller light mono">March 5, 2020 <span
+                        class="tags right-float"><i
+                        class="fa fa-tag"></i><a href="#">DESIGN</a></span></p></section>
+                <section class="post-content"><p>Quisque porta leo erat, at efficitur est euismod vel. Aliquam sed porta
+                    neque. Vestibulum arcu nulla, facilisis nec molestie id, suscipit id purus. Phasellus ut cursus mi,
+                    sed egestas mi. Praesent euismod egestas urna, ac convallis erat pretium at. </p></section>
+                <footer class="post-footer">
+                    <p>
+                        <a href="#"><strong>Continue Reading<span class="em">.</span></strong></a>
+                    </p>
+                </footer>
+            </div>
+        </article>
+
+        <div class="spacer"></div>
+
+        <article id="post-3" class="post">
+            <figure class="post-banner"><img src="content-post1.jpg" alt="Post 1 Title"/></figure>
+            <div class="post-padding">
+                <header class="post-header"><h2>Curabitur sit amet gravida justo. In sapien felis, facilisis non quam
+                    et, faucibus vehicula nisl. Integer eu egestas mi</h2></header>
+                <section class="post-details"><p class="smaller light mono">March 2, 2020 <span
+                        class="tags right-float"><i
+                        class="fa fa-tags"></i><a href="#">DEV</a>, <a href="#">EPALLA</a></span></p></section>
+                <section class="post-content"><p>Did you know the “City of Arts and Sciences” is one of the most
+                    fascinating architectural sites in #Valencia. Elia… Posted by GoPro on Friday, March 2, 2018 It’s no
+                    secret that the digital industry is booming. From exciting startups to global </p>
+                </section>
+                <footer class="post-footer">
+                    <p>
+                        <a href="#"><strong>Continue Reading<span class="em">.</span></strong></a>
+                    </p>
+                </footer>
+            </div>
+        </article>
+    </section>
+    <!-- tbd: reddit feed? sticky "About" post? -->
+</main>
+<footer></footer>
+</body>
+</html>
