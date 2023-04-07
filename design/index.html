@@ -78,14 +78,15 @@
             position: fixed;
             height: 100%;
             width: 300px;
+            max-width: 90%;
             background-color: #fff;
-            padding: 20px;
+            padding: 25px;
             overflow-y: auto;
             overflow-x: hidden;
             border-left: 1px solid #eee;
             z-index: 99999;
             transition: right 0.35s ease-out;
-            right: -340px;
+            right: -350px;
             top: 0px;
         }
 
@@ -206,13 +207,13 @@
 
         // pick a random header image to use
         function rollHeads() {
-            var headNumber = Math.floor(Math.random() * 3) + 1;
+            var headNumber = Math.floor(Math.random() * 4) + 1;
             console.log(headNumber);
             document.getElementById("matts-head").src = 'header-head' + headNumber + '.jpg';
         }
 
         function resetHeads() {
-            document.getElementById("matts-head").src = 'header-head1.jpg';
+            document.getElementById("matts-head").src = 'header-head.jpg';
         }
 
     </script>
@@ -221,7 +222,7 @@
    
     <header class="page-header">
         <div class="header-item">
-            <a href="javascript:toggleNav()" onMouseOver="rollHeads()" onMouseOut="resetHeads()"><img id="matts-head" src="header-head1.jpg" alt="You found me!"/></a>
+            <a href="javascript:toggleNav()" onMouseOver="rollHeads()" onMouseOut="resetHeads()"><img id="matts-head" src="header-head.jpg" alt="You found me!"/></a>
         </div>
         <div class="header-item right">
             <h1>Hey<span class="em">.</span> <span class="hamburger smallest"><a href="javascript:;" onclick="toggleNav()" id="menu-toggle-button"><i class="fas fa-bars"></i></a></span></h1>
@@ -239,7 +240,7 @@
     </header>
     <nav>
         <header><h2>So, uhh.  Hi there.</h2></header>
-        <p>I'm Matt.  You probably figured that out already.  I'm not exactly sure what's going to go here.</p>
+        <p>I'm Matt.  Like in the domain.  I'm a developer - that means this place is 90% for tinkering and 10% for actually sharing content.  But hey, I hope you find something interesting here.  Maybe some tags will help:</p>
     </nav>
     <div id="nav-overlay" onclick="toggleNav()"></div>
     <main>
